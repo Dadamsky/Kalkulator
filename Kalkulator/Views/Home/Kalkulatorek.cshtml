@@ -1,0 +1,17 @@
+﻿@model Kalkulator.Models.Kalkulatorek
+
+@{
+    ViewData["Title"] = "Kalkulatorek";
+}
+
+<h1>Formularz Kalkulatorek</h1>
+<form action="Kalkulatorek">
+     Liczba 1 <input type="text" asp-for="lb1" /> <br />
+    Liczba 2 <input type="number" asp-for="lb2" /> <br />
+    <input type="submit"/>
+
+</form>
+
+@ViewBag.dodawanie <br />
+@ViewBag.odejmowanie <br />
+@ViewBag.mnozenie
